@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Videos in HTML</title>
+  </head>
+  <body>
+    <!-- 
+        The <video> tag is used to embed videos in HTML.
+        Important attributes:
+        - src: Path or URL to the video file
+        - controls: Displays play, pause, volume, etc.
+        - autoplay: Starts playing automatically (⚠️ may be blocked in browsers)
+        - loop: Plays the video repeatedly
+        - muted: Mutes the video (required for autoplay in most browsers)
+        - width/height: Sets the size of the video
+    -->
+
+    <!-- Example 1: Local video file -->
+    <video src="assets/demo.mp4" width="400" controls>
+      Your browser does not support the video tag.
+    </video>
+
+    <br /><br />
+
+    <!-- Example 2: Using multiple sources for better browser support -->
+    <video width="400" controls>
+      <source src="assets/demo.mp4" type="video/mp4" />
+      <source src="assets/demo.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+
+    <br /><br />
+
+    <!-- Example 3: Autoplay, loop, and muted -->
+    <video src="assets/demo.mp4" width="400" autoplay loop muted>
+      Your browser does not support the video tag.
+    </video>
+  </body>
+  <assets/demo
+</html>

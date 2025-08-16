@@ -1,0 +1,13 @@
+/* Styling the body */
+body {
+  background-color: lightblue; /* Page background color */
+  text-align: center; /* Center-align all text */
+}
+
+/* Styling the paragraph */
+p {
+  color: darkblue; /* Text color */
+  font-size: 20px; /* Text size */
+  background-color: lightyellow; /* Paragraph background */
+  padding: 10px; /* Space inside the paragraph */
+}
