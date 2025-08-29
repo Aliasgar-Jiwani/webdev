@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <!--
+    This is a simple HTML page containing a form. The comments before/inside elements
+    explain what each tag and important attribute does. You can open this file in any
+    browser to see the form and inspect the code to read the comments.
+  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example HTML Form (with comments)</title>
+  </head>
+
+  <body>
+    <h1>Student / Contact Form — annotated</h1>
+
+    <form action="/submit-form" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Priya Kumar" required minlength="2">
+
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="1" max="120" step="1" placeholder="18" required>
+
+        <br><br>
+
+        <label>Gender</label><br>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences & skills</legend>
+
+        <label>Which of the following do you know?</label><br>
+        <label><input type="checkbox" name="skills[]" value="python"> Python</label>
+        <label><input type="checkbox" name="skills[]" value="c++"> C++</label>
+        <label><input type="checkbox" name="skills[]" value="flutter"> Flutter</label>
+
+        <br><br>
+
+        <label for="course">Preferred course</label>
+        <select id="course" name="course" required>
+          <option value="" disabled selected>Select a course</option>
+          <option value="msc">MSc Computer Science</option>
+          <option value="mtech">MTech (CS)</option>
+          <option value="phd">PhD in Quantum Computing</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact</legend>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <br><br>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="\d{10,15}">
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+
+  </body>
+</html>
