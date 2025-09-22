@@ -1,0 +1,36 @@
+<!-- 
+  SIMPLE POPUP EXAMPLE WITHOUT VARIABLES
+  --------------------------------------
+  This shows how to directly call alert(), prompt(), and confirm() 
+  from button clicks without storing any value.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direct Popup Example</title>
+  </head>
+  <body>
+    <h1>Direct Popup Example</h1>
+
+    <!-- Direct alert -->
+    <button onclick="alert('Hello! This is a direct alert.')">
+      Show Alert
+    </button>
+
+    <!-- Direct prompt -->
+    <button onclick="prompt('What is your name?')">Ask Name (Prompt)</button>
+
+    <!-- Direct confirm -->
+    <button onclick="confirm('Are you sure you want to continue?')">
+      Confirm Action
+    </button>
+
+    <!-- Explanation:
+       • alert('message') → shows a simple message.
+       • prompt('question') → asks for input (but we are not storing the answer).
+       • confirm('question') → asks for OK/Cancel (but we are not storing true/false).
+  --></body>
+</html>

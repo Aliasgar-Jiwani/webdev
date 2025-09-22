@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Example</title>
+    <style>
+      /* 1. ELEMENT SELECTOR - styles all <p> tags */
+      p {
+        color: blue;
+        font-size: 18px;
+      }
+
+      /* 2. ID SELECTOR - styles the element with id="special" */
+      #special {
+        color: red;
+        font-weight: bold;
+      }
+
+      /* 3. CLASS SELECTOR - styles all elements with class="highlight" */
+      .highlight {
+        background-color: yellow;
+        padding: 5px;
+      }
+
+      /* 4. PSEUDO-CLASS - :hover changes style when mouse is over the element */
+      button:hover {
+        background-color: lightgreen;
+        cursor: pointer;
+      }
+
+      /* 5. PSEUDO-CLASS - :active changes style when the element is clicked */
+      button:active {
+        background-color: orange;
+      }
+
+      /* 6. UNIVERSAL SELECTOR - * styles all elements on the page */
+      * {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors Demo</h1>
+
+    <!-- Element selector applies to this <p> -->
+    <p>This paragraph is styled using an element selector.</p>
+
+    <!-- ID selector applies to this <p> -->
+    <p id="special">This paragraph is styled using an ID selector.</p>
+
+    <!-- Class selector applies to these <p> -->
+    <p class="highlight">This paragraph has a class selector.</p>
+    <p class="highlight">This is another paragraph with the same class.</p>
+
+    <!-- Button to show pseudo-classes :hover and :active -->
+    <button>Hover or Click Me</button>
+  </body>
+</html>

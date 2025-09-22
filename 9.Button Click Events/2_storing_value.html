@@ -1,0 +1,53 @@
+<!-- 
+  SIMPLE EXAMPLE: STORE VALUES FROM PROMPT & CONFIRM
+  --------------------------------------------------
+  This shows how to store user input or choice and display it on the page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Values Example</title>
+  </head>
+  <body>
+    <h1>Store Values from Prompt and Confirm</h1>
+
+    <!-- Button to ask for name -->
+    <button onclick="askName()">Ask Your Name</button>
+
+    <!-- Button to confirm an action -->
+    <button onclick="confirmAction()">Confirm Action</button>
+
+    <p id="output"></p>
+    <!-- Where we will show the result -->
+
+    <script>
+      // Ask user for their name and store it in a variable
+      function askName() {
+        let name = prompt("What is your name?"); // Store input in 'name'
+
+        if (name === null || name === "") {
+          document.getElementById("output").innerText =
+            "You did not enter your name.";
+        } else {
+          document.getElementById("output").innerText = "Hello, " + name + "!";
+        }
+      }
+
+      // Ask user to confirm an action and store result in a variable
+      function confirmAction() {
+        let result = confirm("Do you want to continue?"); // Store true/false in 'result'
+
+        if (result) {
+          document.getElementById("output").innerText =
+            "You clicked OK. Continuing...";
+        } else {
+          document.getElementById("output").innerText =
+            "You clicked Cancel. Stopped!";
+        }
+      }
+    </script>
+  </body>
+</html>

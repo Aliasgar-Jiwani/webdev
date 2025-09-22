@@ -1,0 +1,70 @@
+<!-- 
+  SEMANTIC HTML EXAMPLE
+  ---------------------
+  What are semantics used for?
+  • Semantic tags tell the browser and people what each part of the page means.
+  • They make the code easier to read and understand.
+  • They help search engines and screen readers understand your page better.
+  • Examples of semantic tags: <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>.
+
+  In this example we are using all these tags with comments explaining their purpose.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML Example</title>
+  </head>
+  <body>
+    <!-- 
+    <header> is used for the top section of a page or article.
+    It usually contains the site name, logo, or navigation links.
+  -->
+    <header>
+      <h1>My School Website</h1>
+      <!-- <nav> is for navigation links -->
+      <nav>
+        <a href="#about">About</a> | <a href="#news">News</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- <main> is for the main content of the page -->
+    <main>
+      <!-- <section> groups related content -->
+      <section id="about">
+        <h2>About Our School</h2>
+        <p>We are a school focused on learning and creativity.</p>
+      </section>
+
+      <!-- Another section for different content -->
+      <section id="news">
+        <h2>Latest News</h2>
+
+        <!-- <article> is used for independent content, like a blog post or news article -->
+        <article>
+          <h3>Science Fair 2025</h3>
+          <p>The annual science fair will be held on 10th October 2025.</p>
+        </article>
+
+        <article>
+          <h3>New Library Books</h3>
+          <p>We have added 200 new books to the school library.</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- <aside> is for side content like ads, quotes, or extra info -->
+    <aside>
+      <h2>Quick Info</h2>
+      <p>School timings: 8:00 AM - 2:00 PM</p>
+    </aside>
+
+    <!-- <footer> is used at the bottom of the page -->
+    <footer>
+      <p>&copy; 2025 My School. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
