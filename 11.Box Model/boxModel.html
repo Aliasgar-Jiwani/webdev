@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Basics</title>
+  <style>
+    /* This box shows how the box model works */
+    .box {
+      width: 200px;              /* Content area width */
+      height: 100px;             /* Content area height */
+      padding: 20px;             /* Space between content and border */
+      border: 5px solid blue;    /* Border around the padding */
+      margin: 30px;              /* Space outside the box */
+      background-color: lightyellow; /* Content background */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model Explained</h1>
+
+  <p>The CSS Box Model has 4 parts: <strong>Content</strong>, <strong>Padding</strong>, <strong>Border</strong>, and <strong>Margin</strong>.</p>
+
+  <div class="box">
+    This is the content area.<br>
+    Around it: padding, border, and margin.
+  </div>
+
+  <ul>
+    <li><strong>Content:</strong> The actual text or image inside the box.</li>
+    <li><strong>Padding:</strong> Space between the content and the border.</li>
+    <li><strong>Border:</strong> A line that goes around the padding (can have thickness and color).</li>
+    <li><strong>Margin:</strong> Space outside the border, separating this box from other elements.</li>
+  </ul>
+</body>
+</html>

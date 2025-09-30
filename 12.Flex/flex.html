@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox Basics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .flex-container {
+        display: flex; /* Turns this div into a flex container */
+        border: 2px solid #333; /* Just to show the container border */
+        padding: 10px;
+        gap: 10px; /* Space between items */
+      }
+
+      .box {
+        background: lightblue;
+        border: 1px solid blue;
+        padding: 20px;
+        flex: 1; /* Each item takes equal space */
+        text-align: center;
+      }
+
+      /* Example: justify-content */
+      .justify-example {
+        display: flex;
+        border: 2px dashed green;
+        margin-top: 20px;
+        padding: 10px;
+        justify-content: space-around; /* Distributes items with space around them */
+      }
+
+      /* Example: align-items */
+      .align-example {
+        display: flex;
+        border: 2px dashed red;
+        margin-top: 20px;
+        height: 150px; /* Height to show vertical alignment */
+        align-items: center; /* Aligns items vertically in the middle */
+        gap: 10px;
+      }
+
+      .tall-box {
+        background: lightcoral;
+        padding: 30px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flexbox Explained</h1>
+
+    <h2>1. Basic Flex Container</h2>
+    <p>
+      Using <code>display: flex</code> makes the container a flexbox, arranging
+      items in a row by default.
+    </p>
+    <div class="flex-container">
+      <div class="box">Item 1</div>
+      <div class="box">Item 2</div>
+      <div class="box">Item 3</div>
+    </div>
+
+    <h2>2. Justify Content</h2>
+    <p>
+      Controls the <strong>horizontal alignment</strong> of items inside the
+      container.
+    </p>
+    <div class="justify-example">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+
+    <h2>3. Align Items</h2>
+    <p>
+      Controls the <strong>vertical alignment</strong> of items inside the
+      container.
+    </p>
+    <div class="align-example">
+      <div class="box">X</div>
+      <div class="tall-box">Y (taller)</div>
+      <div class="box">Z</div>
+    </div>
+
+    <h2>Summary</h2>
+    <ul>
+      <li><code>display: flex</code> → makes a flex container.</li>
+      <li>
+        <code>justify-content</code> → controls horizontal space distribution.
+      </li>
+      <li><code>align-items</code> → controls vertical alignment.</li>
+      <li><code>flex: 1</code> → makes all items grow equally.</li>
+    </ul>
+  </body>
+</html>
